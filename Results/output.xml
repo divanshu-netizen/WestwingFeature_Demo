@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on darwin)" generated="20210128 01:15:34.308" rpa="false">
+<suite id="s1" name="WestwingDemo" source="/Users/divanshugupta/Documents/development/robot-scripts/WW-Assignment-Gherkin/Tests/WestwingDemo.robot">
+<test id="s1-t1" name="Westwing Features Demo">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210128 01:15:34.491" level="INFO">Opening browser 'safari' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210128 01:15:34.490" endtime="20210128 01:15:56.125"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210128 01:15:56.125" endtime="20210128 01:15:56.173"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:15:34.490" endtime="20210128 01:15:56.174"></status>
+</kw>
+<kw name="Given user is on the Westwing home page" library="WestwingApp">
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.westwingnow.de</arg>
+</arguments>
+<msg timestamp="20210128 01:15:56.175" level="INFO">Opening url 'https://www.westwingnow.de'</msg>
+<status status="PASS" starttime="20210128 01:15:56.175" endtime="20210128 01:15:59.485"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:15:56.175" endtime="20210128 01:15:59.485"></status>
+</kw>
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Mein Konto</arg>
+</arguments>
+<status status="PASS" starttime="20210128 01:15:59.485" endtime="20210128 01:15:59.508"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210128 01:16:04.510" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210128 01:15:59.508" endtime="20210128 01:16:04.510"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:15:59.485" endtime="20210128 01:16:04.511"></status>
+</kw>
+<kw name="Accept Cookies" library="LandingPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=onetrust-accept-btn-handler</arg>
+</arguments>
+<msg timestamp="20210128 01:16:04.512" level="INFO">Clicking button 'id=onetrust-accept-btn-handler'.</msg>
+<status status="PASS" starttime="20210128 01:16:04.512" endtime="20210128 01:16:04.575"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210128 01:16:06.577" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210128 01:16:04.575" endtime="20210128 01:16:06.578"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>LandingPage.png</arg>
+</arguments>
+<msg timestamp="20210128 01:16:06.906" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="LandingPage.png"&gt;&lt;img src="LandingPage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 01:16:06.578" endtime="20210128 01:16:06.906"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:04.511" endtime="20210128 01:16:06.906"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:15:56.174" endtime="20210128 01:16:06.906"></status>
+</kw>
+<kw name="When user searches for &quot;möbel&quot;" library="WestwingApp">
+<kw name="Enter Search Term &quot;möbel&quot;" library="SearchNav">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//header/div[6]/div[1]/form[1]/input[1]</arg>
+<arg>möbel</arg>
+</arguments>
+<msg timestamp="20210128 01:16:06.907" level="INFO">Typing text 'möbel' into text field 'xpath=//header/div[6]/div[1]/form[1]/input[1]'.</msg>
+<status status="PASS" starttime="20210128 01:16:06.907" endtime="20210128 01:16:07.087"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>8</arg>
+</arguments>
+<msg timestamp="20210128 01:16:15.089" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" starttime="20210128 01:16:07.087" endtime="20210128 01:16:15.089"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:06.907" endtime="20210128 01:16:15.089"></status>
+</kw>
+<kw name="Submit Search" library="SearchNav">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="wwOneHeader"]/div/div[1]/header/div[6]/div[2]/div/div/div[1]/nav/div[1]/a/div/div/span</arg>
+</arguments>
+<msg timestamp="20210128 01:16:15.091" level="INFO">Clicking element 'xpath=//*[@id="wwOneHeader"]/div/div[1]/header/div[6]/div[2]/div/div/div[1]/nav/div[1]/a/div/div/span'.</msg>
+<status status="PASS" starttime="20210128 01:16:15.090" endtime="20210128 01:16:15.167"></status>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20210128 01:16:15.167" endtime="20210128 01:16:20.219"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20210128 01:16:30.220" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210128 01:16:20.219" endtime="20210128 01:16:30.221"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>SeachProduct.png</arg>
+</arguments>
+<msg timestamp="20210128 01:16:30.348" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="SeachProduct.png"&gt;&lt;img src="SeachProduct.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 01:16:30.221" endtime="20210128 01:16:30.349"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:15.090" endtime="20210128 01:16:30.349"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:06.906" endtime="20210128 01:16:30.349"></status>
+</kw>
+<kw name="Then user should see product listing page with a list of products" library="WestwingApp">
+<kw name="Verify search returned list of products" library="SearchResults">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Produkte</arg>
+</arguments>
+<status status="PASS" starttime="20210128 01:16:30.350" endtime="20210128 01:16:30.366"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210128 01:16:35.368" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210128 01:16:30.366" endtime="20210128 01:16:35.368"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:30.350" endtime="20210128 01:16:35.369"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:30.349" endtime="20210128 01:16:35.369"></status>
+</kw>
+<kw name="When user click on wishlist icon of the first found product" library="WestwingApp">
+<kw name="Click Wishlist Icon" library="Wishlist">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//body/div[@id='app-root']/div[1]/div[1]/div[6]/div[1]/div[1]/main[1]/div[1]/div[2]/div[1]/a[1]/div[1]/div[2]/div[2]/div[1]/*[1]</arg>
+</arguments>
+<msg timestamp="20210128 01:16:35.371" level="INFO">Clicking element 'xpath=//body/div[@id='app-root']/div[1]/div[1]/div[6]/div[1]/div[1]/main[1]/div[1]/div[2]/div[1]/a[1]/div[1]/div[2]/div[2]/div[1]/*[1]'.</msg>
+<status status="PASS" starttime="20210128 01:16:35.371" endtime="20210128 01:16:35.428"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:35.370" endtime="20210128 01:16:35.428"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:35.370" endtime="20210128 01:16:35.428"></status>
+</kw>
+<kw name="Then user should see the login/registration overlay" library="WestwingApp">
+<kw name="Login/Register Overlay" library="Wishlist">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>name=email</arg>
+</arguments>
+<msg timestamp="20210128 01:16:35.530" level="INFO">Current page contains element 'name=email'.</msg>
+<status status="PASS" starttime="20210128 01:16:35.429" endtime="20210128 01:16:35.530"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210128 01:16:38.532" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210128 01:16:35.530" endtime="20210128 01:16:38.533"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>Login.png</arg>
+</arguments>
+<msg timestamp="20210128 01:16:38.635" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Login.png"&gt;&lt;img src="Login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 01:16:38.533" endtime="20210128 01:16:38.635"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:35.429" endtime="20210128 01:16:38.636"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:35.428" endtime="20210128 01:16:38.636"></status>
+</kw>
+<kw name="When user switch to login form of the overlay" library="WestwingApp">
+<kw name="Login Button" library="Login">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[contains(text(),'Hier einloggen')]</arg>
+</arguments>
+<msg timestamp="20210128 01:16:38.637" level="INFO">Clicking button 'xpath=//button[contains(text(),'Hier einloggen')]'.</msg>
+<status status="PASS" starttime="20210128 01:16:38.637" endtime="20210128 01:16:38.690"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210128 01:16:41.693" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210128 01:16:38.691" endtime="20210128 01:16:41.693"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:38.636" endtime="20210128 01:16:41.694"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:38.636" endtime="20210128 01:16:41.694"></status>
+</kw>
+<kw name="And user log in with valid credentials" library="WestwingApp">
+<kw name="Passing Credentials" library="Login">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=email</arg>
+<arg>divanshu.gupta@outlook.com</arg>
+</arguments>
+<msg timestamp="20210128 01:16:41.696" level="INFO">Typing text 'divanshu.gupta@outlook.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20210128 01:16:41.696" endtime="20210128 01:16:41.962"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>Westwing@1234</arg>
+</arguments>
+<msg timestamp="20210128 01:16:41.962" level="INFO">Typing text 'Westwing@1234' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20210128 01:16:41.962" endtime="20210128 01:16:42.099"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[contains(text(),'Anmelden')]</arg>
+</arguments>
+<msg timestamp="20210128 01:16:42.100" level="INFO">Clicking button 'xpath=//button[contains(text(),'Anmelden')]'.</msg>
+<status status="PASS" starttime="20210128 01:16:42.099" endtime="20210128 01:16:42.152"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210128 01:16:45.153" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210128 01:16:42.152" endtime="20210128 01:16:45.153"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>WishlistIconClicked.png</arg>
+</arguments>
+<msg timestamp="20210128 01:16:45.267" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="WishlistIconClicked.png"&gt;&lt;img src="WishlistIconClicked.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 01:16:45.154" endtime="20210128 01:16:45.267"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:41.695" endtime="20210128 01:16:45.267"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:41.694" endtime="20210128 01:16:45.268"></status>
+</kw>
+<kw name="Then the product should be added to the wishlist" library="WestwingApp">
+<kw name="Wishlist Counter" library="Cart">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>css=.icon-wishlist</arg>
+</arguments>
+<msg timestamp="20210128 01:16:45.274" level="INFO">Current page contains element 'css=.icon-wishlist'.</msg>
+<status status="PASS" starttime="20210128 01:16:45.269" endtime="20210128 01:16:45.274"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20210128 01:16:49.276" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210128 01:16:45.274" endtime="20210128 01:16:49.277"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:45.268" endtime="20210128 01:16:49.277"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:45.268" endtime="20210128 01:16:49.277"></status>
+</kw>
+<kw name="And user go to the wishlist page" library="WestwingApp">
+<kw name="Wishlist Page" library="Cart">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.icon-wishlist</arg>
+</arguments>
+<msg timestamp="20210128 01:16:49.279" level="INFO">Clicking element 'css=.icon-wishlist'.</msg>
+<status status="PASS" starttime="20210128 01:16:49.279" endtime="20210128 01:16:49.369"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210128 01:16:54.372" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210128 01:16:49.369" endtime="20210128 01:16:54.372"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Meine Wunschliste</arg>
+</arguments>
+<msg timestamp="20210128 01:16:54.389" level="INFO">Current page contains text 'Meine Wunschliste'.</msg>
+<status status="PASS" starttime="20210128 01:16:54.372" endtime="20210128 01:16:54.389"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20210128 01:17:04.391" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210128 01:16:54.389" endtime="20210128 01:17:04.391"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>ProductAdded.png</arg>
+</arguments>
+<msg timestamp="20210128 01:17:04.479" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ProductAdded.png"&gt;&lt;img src="ProductAdded.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 01:17:04.391" endtime="20210128 01:17:04.481"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:49.279" endtime="20210128 01:17:04.482"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:16:49.278" endtime="20210128 01:17:04.482"></status>
+</kw>
+<kw name="And user delete the product from my wishlist" library="WestwingApp">
+<kw name="Delete Product" library="Cart">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="wishlistRoot"]/div/div[4]/div/ul/li/button</arg>
+</arguments>
+<msg timestamp="20210128 01:17:04.483" level="INFO">Clicking button 'xpath=//*[@id="wishlistRoot"]/div/div[4]/div/ul/li/button'.</msg>
+<status status="PASS" starttime="20210128 01:17:04.483" endtime="20210128 01:17:04.535"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210128 01:17:09.537" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210128 01:17:04.535" endtime="20210128 01:17:09.537"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Jetzt alle Neuheiten entdecken</arg>
+</arguments>
+<msg timestamp="20210128 01:17:09.551" level="INFO">Current page contains text 'Jetzt alle Neuheiten entdecken'.</msg>
+<status status="PASS" starttime="20210128 01:17:09.537" endtime="20210128 01:17:09.551"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>EmptyCart.png</arg>
+</arguments>
+<msg timestamp="20210128 01:17:09.649" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="EmptyCart.png"&gt;&lt;img src="EmptyCart.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 01:17:09.551" endtime="20210128 01:17:09.649"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:17:04.482" endtime="20210128 01:17:09.649"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:17:04.482" endtime="20210128 01:17:09.649"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210128 01:17:09.650" endtime="20210128 01:17:09.668"></status>
+</kw>
+<status status="PASS" starttime="20210128 01:17:09.650" endtime="20210128 01:17:09.668"></status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20210128 01:15:34.489" endtime="20210128 01:17:09.668" critical="yes"></status>
+</test>
+<doc>This script contains test case for Westwing Demo</doc>
+<status status="PASS" starttime="20210128 01:15:34.310" endtime="20210128 01:17:09.670"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="WestwingDemo">WestwingDemo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
