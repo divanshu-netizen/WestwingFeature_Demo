@@ -16,7 +16,7 @@ Results - Report & Log files in html(can be opened in a browser), output file in
 
 # Prerequisites
 
-In order to run this Test Automation suite one should have following application installed:
+In order to run this Test Automation suite one should have following libraries, softwares, applications installed:
 
 Python & pip should be installed
 
@@ -40,9 +40,4 @@ git clone https://github.com/divanshu-netizen/WestwingFeature_Demo.git
 2. From the Terminal Window run below command
   robot -d Results Tests/Westwing.robot
 3. Results folder will hold the Report.html file which you can open in a browser of your choice, log file is also hosted here.
-
-
-
-
-
 
