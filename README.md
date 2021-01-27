@@ -6,6 +6,7 @@ Automation Suite for testing Westwing Feature.
 Like manual steps, Gherkin(BDD) notation has been used along with Robot Framework & SeleniumLibrary. Page Object Model has been implemented to separte test script file, setup file from the resource and keywords file. Result folder contains report, log & output files. I've captured Screen shot of the Actual results also which is also saved under Results folder.
 
 Suite has 3 folders:
+
 Tests - It has driving script, it has steps in the form of Gherkin notation(Westwing.robot).
 
 Resources - It has scripts for Setup & Teardwon(Opening & closing browsers), it also has scripts that are user defined Keywords and various page files in POM structure(PO- All the test steps are defined in this sub folder)
@@ -18,6 +19,7 @@ Results - Report & Log files in html(can be opened in a browser), output file in
 In order to run this Test Automation suite one should have following application installed:
 
 Python & pip should be installed
+
 please run following commands:
 pip install robotframework-seleniumlibrary 3.0.0
 
