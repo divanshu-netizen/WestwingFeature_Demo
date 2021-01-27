@@ -14,7 +14,8 @@ please run following commands:
 pip install robotframework-seleniumlibrary 3.0.0
 
 Web Browsers & Web Drivers:
-Web Browsers: Safari, Chrome, Firefox, IE, Opera
+Web Browsers: Safari, Chrome, Firefox, IE, Opera,
+Download webdrivers for the above browsers & put them in the Path variables.
 
 IDE:
 PyCharm, Visual Studio
