@@ -7,7 +7,9 @@ Like manual steps, Gherkin(BDD) notation has been used along with Robot Framewor
 
 Suite has 3 folders:
 Tests - It has driving script, it has steps in the form of Gherkin notation(Westwing.robot).
+
 Resources - It has scripts for Setup & Teardwon(Opening & closing browsers), it also has scripts that are user defined Keywords and various page files in POM structure(PO- All the test steps are defined in this sub folder)
+
 Results - Report & Log files in html(can be opened in a browser), output file in XML format.
 
 
