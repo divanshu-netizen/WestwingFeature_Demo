@@ -38,6 +38,8 @@ git clone https://github.com/divanshu-netizen/WestwingFeature_Demo.git
 
 1. Go to the path where above repo has been cloned.
 2. From the Terminal Window run below command
-  robot -d Results Tests/Westwing.robot
+  
+  "robot -d Results Tests/Westwing.robot"
+  
 3. Results folder will hold the Report.html file which you can open in a browser of your choice, log file is also hosted here.
 
